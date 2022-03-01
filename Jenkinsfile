@@ -1,6 +1,6 @@
 
 pipeline {
-  agent any
+  agent { label 'nodoMiriam' }
   stages {
     stages('Build') {
       steps {
