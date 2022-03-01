@@ -2,7 +2,7 @@
 pipeline {
   agent { label 'nodoMiriam' }
   stages {
-    stages('Build') {
+    stage('Build') {
       steps {
         echo "Do something"
       }
