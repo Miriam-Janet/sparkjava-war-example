@@ -21,7 +21,9 @@ pipeline {
     }
     stage('Deploy') {
       steps {
-        echo "Do something"
+        sh '''
+          docker cp /root/workspace/MiriamFolder/MiriamPipeline/target/sparkjava-hello-world-1.0.war tomcat://usr/local/tomcat/webapps
+        '''
       }
     }
   }
