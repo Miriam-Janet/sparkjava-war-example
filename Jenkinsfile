@@ -10,6 +10,7 @@ pipeline {
         echo "Buenos dias"
         docker ps
         echo "Do something"
+        mvn clean install
         '''
       }
     }
