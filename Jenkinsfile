@@ -4,7 +4,13 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        sh '''
+        ls
+        pwd
+        echo "Buenos dias"
+        docker os
         echo "Do something"
+        '''
       }
     }
     stage('Test') {
