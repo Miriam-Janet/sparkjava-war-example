@@ -8,7 +8,7 @@ pipeline {
         ls
         pwd
         echo "Buenos dias"
-        docker os
+        docker ps
         echo "Do something"
         '''
       }
